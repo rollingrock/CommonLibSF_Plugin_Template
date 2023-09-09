@@ -1,5 +1,5 @@
-# Plugin Template for CommonLibSF
-Starter Project Template for use with CommonLibSF
+# Project Plugin Template for CommonLibSF
+Starter Project Template for use with CommonLibSF for Starfield SFSE Plugin Development
 
 ## Build Dependencies
 
