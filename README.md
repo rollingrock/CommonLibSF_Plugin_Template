@@ -1,5 +1,5 @@
-# Plugin Template for CommonLibSF
-Starter Project Template for use with CommonLibSF
+# Project Plugin Template for CommonLibSF
+Starter Project Template for use with CommonLibSF for Starfield SFSE Plugin Development
 
 ## Build Dependencies
 
@@ -22,6 +22,10 @@ CommonLibSF is linked as a submodule in the extern directory.    YOu can configu
 ```bash
 git submodule update
 ```
+
+## Post Build Copy
+
+Set a envirorment variable for StarFieldPath to the starfield game directory and there will automatically be a post build copy action to move the dll's to the game
 
 ## CommonLibSF
 https://github.com/Starfield-Reverse-Engineering/CommonLibSF
