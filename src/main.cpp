@@ -33,11 +33,9 @@ namespace
 		spdlog::set_pattern("[%Y-%m-%d %H-%M-%S.%e][%-16s:%-4#][%=7l]: %v"s);
 
 		logger::info(
-			"{} v{}.{}.{}"sv,
+			"{} v{}"sv,
 			Plugin::NAME,
-			Plugin::VERSION[0],
-			Plugin::VERSION[1],
-			Plugin::VERSION[2]);
+			Plugin::Version);
 	}
 
 }
@@ -45,9 +43,9 @@ namespace
 
 extern "C" DLLEXPORT constinit auto SFSEPlugin_Version = []() noexcept {
 	SFSE::PluginVersionData data{};
-	data.PluginVersion(1);
+	data.PluginVersion(Plugin::Version);
 	data.PluginName(Plugin::NAME);
-	data.AuthorName("RollingRock"sv);
+	data.AuthorName(Plugin::AUTHOR);
 	data.UsesSigScanning(true);
 	data.UsesAddressLibrary(true);
 	data.HasNoStructUse(true);
