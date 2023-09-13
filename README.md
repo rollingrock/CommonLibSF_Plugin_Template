@@ -1,6 +1,9 @@
 # Project Plugin Template for CommonLibSF
 Starter Project Template for use with CommonLibSF for Starfield SFSE Plugin Development
 
+# This project is a barebones template you can use if you want.    I recommend checking out the officially supported plugin template linked below:
+https://github.com/Starfield-Reverse-Engineering/CLibSFPluginTemplate
+
 ## Build Dependencies
 
 - [CMake 3.26+](https://cmake.org/)
